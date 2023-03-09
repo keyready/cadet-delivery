@@ -1,0 +1,121 @@
+.Button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 200ms;
+
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 80%;
+        stroke-opacity: 80%;
+    }
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
+
+.size_xl {
+    font: var(--font-xl);
+}
+
+.primary {
+    border: 2px solid var(--inverted-primary-color);
+    color: var(--inverted-primary-color);
+    background: var(--inverted-bg-color);
+
+    &:hover {
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        background: var(--bg-color);
+        transform: scale(95%);
+    }
+}
+
+.outlined {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--bg-color);
+
+    &:hover {
+        transform: scale(95%);
+    }
+}
+
+.inverted {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--bg-color);
+
+    &:hover {
+        border: 2px solid var(--inverted-primary-color);
+        color: var(--inverted-primary-color);
+        background: var(--inverted-bg-color);
+        transform: scale(95%);
+    }
+}
+
+.clear {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    border: 2px solid black;
+    color: black;
+    background: gray;
+    opacity: 0.8;
+
+    &:hover {
+        border: 2px solid black;
+        color: black;
+        background: gray;
+        opacity: 0.8;
+        animation: nota-llowed 300ms;
+    }
+}
+
+.error {
+    border: 2px solid var(--dark-red);
+    color: var(--light-red);
+    background: var(--bg-color);
+
+    &:hover {
+        transform: scale(95%);
+    }
+}
+
+.success {
+    border: 2px solid var(--dark-green);
+    color: var(--light-green);
+    background: var(--bg-color);
+
+    &:hover {
+        transform: scale(95%);
+    }
+}
+
+@keyframes nota-llowed {
+    0% {
+        transform: scale(110%);
+    }
+
+    50% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
