@@ -1,0 +1,42 @@
+.item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--inverted-primary-color);
+    }
+
+    &:hover .icon {
+        fill: var(--primary-color);
+    }
+}
+
+.link {
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.collapsed {
+    .link {
+        width: 0;
+        display: none;
+        transition: 0.2s;
+    }
+}
+
+.badge {
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: white;
+    background: red;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

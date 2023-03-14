@@ -1,0 +1,21 @@
+@import "reset";
+@import "variables/globals";
+@import "themes/normal";
+@import "themes/dark";
+@import "themes/natalingor";
+@import "~bootstrap/scss/bootstrap";
+
+.app,
+.app_modal {
+    color: var(--primary-color);
+    font: var(--font-m);
+}
+
+.app {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+}
