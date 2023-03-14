@@ -1,6 +1,6 @@
 {
   "name": "cadet-delivery-beta",
-  "version": "developing",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
